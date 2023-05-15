@@ -1,0 +1,24 @@
+{
+    "name": "static-site",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+
+
+    },
+    "repository": {
+
+    },
+    "keywords": {
+
+    },
+    "scripts": {
+      "test": "jest"
+    },
+    "author": "Marek Polak",
+    "license": "ISC",
+    "dependencies": {
+      "inquirer": "^8.2.4"
+    }
+  }
