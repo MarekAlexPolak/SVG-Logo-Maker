@@ -10,7 +10,8 @@ const questions = [
         type: 'input',
         name: 'text',
         message:'Please enter what you would like your logo to display? (This must be between 0 and 3 characters)',
-        validate: (input) => 0 < input.length < 4
+        //validates the correct input length
+        validate: (input) => 0 < input.length && input.length < 4
     },
     {
         type: 'input',
@@ -31,7 +32,7 @@ const questions = [
     {
         type: 'input',
         name: 'fileName',
-        message:'What would you like to name your file',
+        message:'What would you like to name your file?'  
     }
 ]
 
