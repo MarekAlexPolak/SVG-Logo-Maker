@@ -27,6 +27,11 @@ const questions = [
         name: 'shape',
         message:'Please choose your desired shape.',
         choices: ['Square', 'Triangle', 'Circle']
+    },
+    {
+        type: 'input',
+        name: 'fileName',
+        message:'What would you like to name your file',
     }
 ]
 
@@ -40,7 +45,7 @@ function writeSVG(logo, fileName) {
 function init() {
     inquirer.prompt(questions)
     .then((data) => {
-        writeSVG(generateSVG(data),'logo.svg');
+        writeSVG(generateSVG(data),`./examples/${data.fileName}.svg`);
     })
 }
 //call run function

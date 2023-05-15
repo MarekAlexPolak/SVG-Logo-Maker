@@ -12,13 +12,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+"
+        "url": "git+https://github.com/MarekAlexPolak/SVG-Logo-Maker"
     },
     "keywords": [],
     "author": "Marek Polak",
     "license": "",
     "bugs": {
-        "url": ""
+        "url": "https://github.com/MarekAlexPolak/SVG-Logo-Maker"
     },
     "homepage": "",
     "dependencies": {
