@@ -1,37 +1,28 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const {triangle, square, circle} = require("./lib/shapes");
+const {Square, Triangle, Circle} = require("./lib/shapes");
 
 const questions = [
     {
         type: "input",
-        name: "title",
-        message:"This will be the text"
+        name: "text",
+        message:"Please enter what you would like your logo to display? (This must be between 0 and 3 characters)"
     },
     {
         type: "input",
-        name: "title",
-        message:"This will be the text"
+        name: "colour",
+        message:"Please choose a text colour by typing the name or hexidecimal code."
     },
     {
         type: "input",
-        name: "title",
-        message:"This will be the text"
+        name: "shapeColour",
+        message:"Please input your desired logo colour by typing the name or hecidecimal code."
     },
     {
-        type: "input",
-        name: "title",
-        message:"This will be the text"
-    },
-    {
-        type: "input",
-        name: "title",
-        message:"This will be the text"
-    },
-    {
-        type: "input",
-        name: "title",
-        message:"This will be the text"
+        type: "list",
+        name: "shape",
+        message:"Please choose your desired shape.",
+        choices: ["Square", "Triangle", "Circle"]
     }
 ]
 
