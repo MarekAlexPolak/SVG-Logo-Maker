@@ -29,16 +29,17 @@ const questions = [
     }
 ]
 
-
-function askQuest() {
-    inquirer.prompt(questions)
-    .then((data) => {
-        writeFile('logo.svg', generateSVG);
-    })
-}
-
 function writeSVG(logo, fileName) {
     fs.writeFile(fileName, logo, err => {
         if (err) console.log (err);
     });
 }
+
+function init() {
+    inquirer.prompt(questions)
+    .then((data) => {
+        writeSVG(generateSVG(data),'logo.svg');
+    })
+}
+
+init();
