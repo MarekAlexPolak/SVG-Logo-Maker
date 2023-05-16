@@ -38,7 +38,7 @@
 
   Once completed your SVG will be generated based on your responses. 
 
-  [Video Demo]()
+  [Video Demo](https://www.youtube.com/watch?v=rFya8rIX3fk)
 
   ## License
     
